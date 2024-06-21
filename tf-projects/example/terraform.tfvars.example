@@ -1,0 +1,40 @@
+#name = "neuvector"
+#namespace = "cattle-neuvector-system"
+#app_version = "" #The default NeuVector version is the one defined by the `tag:` parameter of the file https://github.com/neuvector/neuvector-helm/blob/master/charts/core/values.yaml
+#controller_replicas = 3
+
+#controller_env = []
+## -- Environment Variables
+#controller_env = [
+#  {
+#     name  = "NV_PLATFORM_INFO"
+#     value = "platform=Kubernetes:GKE"
+#  },
+#  {
+#     name  = "ANOTHER_ENV_VAR"
+#     value = "another-value"
+#  }
+#]
+
+#controller_node_selector = nil
+## -- Using Node Labels for Controller Nodes
+#controller_node_selector = { "node-role.kubernetes.io/nvcontroller" = "" }
+# --
+
+#controller_secret_enabled = false
+#controller_secret_password = ""
+#manager_svc_type = "ClusterIP"
+#cve_scanner_replicas = 2
+
+#cve_scanner_node_selector = nil
+## -- Using Node Labels for Scanner Nodes
+#cve_scanner_node_selector = { "node-role.kubernetes.io/nvcontroller" = "" }
+# --
+
+#resources_limits_cpu = "400m"
+#resources_limits_memory = "2792Mi"
+#resources_requests_cpu = "100m"
+#resources_requests_memory = "2280Mi"
+#containerd_enabled = true
+#containerd_path = "/var/run/containerd/containerd.sock"
+kubeconfig_path = "path/to/your/kubeconfig/file"
