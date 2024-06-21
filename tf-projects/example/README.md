@@ -126,13 +126,7 @@ resource "neuvector_application" "example" {
 
 #variable "controller_replicas" {}
 
-#variable "controller_env" {
-#  type = list(object({
-#    name  = string
-#    value = string
-#  }))
-#  default = []
-#}
+#variable "controller_env" {}
 
 #variable "controller_node_selector" {}
 
